@@ -137,12 +137,15 @@ h1, h2, h3, h4, h5 {
 header nav {
 	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+	align-items: center;
 }
 
 .links {
 	width: 60%;
 	flex-basis: auto;
+	display: flex;
+	justify-content: space-around;
 }
 
 .logo {
@@ -163,18 +166,19 @@ nav a {
 
 #section1 {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 }
 
-#section1 div {
-	
-}
-
-
-#section1 div button {
+#section1 button {
 
 	box-sizing: border-box;
 	font-size: 16px;
+}
+
+#section1 .container {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
 }
 
 #section1 h1 {
@@ -194,9 +198,16 @@ nav a {
 
 #section2 .container {
 	display: flex;
+	justify-content: space-evenly;
 }
 
+.features {
+	width: 43%;
+}
 
+.about {
+	width: 43%;
+}
 
 
 /* section three */
@@ -204,7 +215,7 @@ nav a {
 #section3 {
 	max-width: 100%;
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 }
 
 /* section four */
@@ -214,28 +225,30 @@ nav a {
 }
 
 #section4 .container div {
-	width: 32%;
+	width: 28%;
 }
 
 #section4 .container {
 	display: flex;
+	justify-content: space-evenly;
 }
+
 
 /* footer */
 
-footer {
-	
+footer .container {
+
 }
-footer .container div {
+
+.contact {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
+	margin-left: 4%;
 }
 
-footer .container h3 {
-	margin: 0 8%;
 
-}
-
-.copyright {
+footer .container .copyright {
+	display: flex;
 	justify-content: center;
 }
