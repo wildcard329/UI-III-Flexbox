@@ -139,6 +139,7 @@ header nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 5%;
 }
 
 .links {
@@ -193,12 +194,17 @@ nav a {
 /* section two */
 
 #section2 {
+	margin-left: 4%;
+	margin-right: 4%;
+	margin-top: 10%;
 	border-top:1px solid black;
 }
 
 #section2 .container {
+	margin-top: 5%;
+	margin-bottom: 5%;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 }
 
 .features {
@@ -222,6 +228,10 @@ nav a {
 
 #section4 {
 	border-bottom: 1px solid black;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	margin-right: 4%;
+	margin-left: 4%;
 }
 
 #section4 .container div {
@@ -230,7 +240,8 @@ nav a {
 
 #section4 .container {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
+	margin-bottom: 5%;
 }
 
 
