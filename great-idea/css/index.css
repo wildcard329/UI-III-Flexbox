@@ -64,3 +64,278 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+
+/* header */
+
+header nav {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 5%;
+}
+
+.links {
+	width: 60%;
+	flex-basis: auto;
+	display: flex;
+	justify-content: space-around;
+}
+
+.logo {
+	width: 20;
+}
+
+.logo img {
+	max-width: 100%;
+}
+
+nav a {
+	text-decoration: none;
+	color: gray;
+	
+}
+
+/* section one */
+
+#section1 {
+	display: flex;
+	justify-content: center;
+}
+
+#section1 button {
+
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+#section1 .container {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+}
+
+#section1 h1 {
+	font-size: 80px;
+}
+
+#section1 h1 div {
+	font-size: 75px;
+	
+}
+
+/* section two */
+
+#section2 {
+	margin-left: 4%;
+	margin-right: 4%;
+	margin-top: 10%;
+	border-top:1px solid black;
+}
+
+#section2 .container {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.features {
+	width: 43%;
+}
+
+.about {
+	width: 43%;
+}
+
+
+/* section three */
+
+#section3 {
+	max-width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+/* section four */
+
+#section4 {
+	border-bottom: 1px solid black;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	margin-right: 4%;
+	margin-left: 4%;
+}
+
+#section4 .container div {
+	width: 28%;
+}
+
+#section4 .container {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 5%;
+}
+
+
+/* footer */
+
+footer .container {
+
+}
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-left: 4%;
+}
+
+
+footer .container .copyright {
+	display: flex;
+	justify-content: center;
+}
+
+/* Services.html */
+/* The header and footer for index and services pages share the same CSS code. */
+
+/* servicesSection1 */
+#servicesSection1 {
+	display: flex;
+	flex-direction: column;
+}
+
+.header-img {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#servicesSection1 div {
+	margin: 3%;
+	border-bottom: 1px solid black;
+}
+
+#servicesSection1 p {
+	margin-bottom: 5%;
+}
+/* servicesSection2 */
+
+#servicesSection2 .container {
+	margin-bottom: 5%;
+	border-bottom: 2px solid black;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.box {
+	width: 40%;
+	height: 15%;
+	background-color: lightgray;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	margin: 2% 3% 2%;
+	padding: 2%;
+}
+
+.box button {
+	margin: 2% 0;
+	width: 30%;
+}
+
+/* serviceSection 3 */
+
+#servicesSection3 {
+	display: flex;
+	justify-content: space-between;
+	margin: 5% 0;
+}
+
+.about {
+	display: flex;
+	flex-direction: column;
+	margin-left: 4%;
+}
+
+.info-img {
+	height: 80%;
+	width: 45%;
+	display: flex;
+}
+
+ul {
+	list-style-type: square;
+}
+li {
+	margin: 3%;
+}
